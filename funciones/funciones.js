@@ -65,12 +65,14 @@ function add(a,b,c){
     return a+b+c;
 }
 
-let numeros=[2,3,4];
+let numeros=[2,3,7];
+let suma=numeros.reduce((a,b)=>a+b);
+console.log(suma);
 
 // let myAdd=add(numeros);
 // console.log(myAdd);
 
 let myAdd=add.apply(undefined,numeros);
 console.log(myAdd);
-let myOtherAdd=addcall(undefined,2,3,4);
+let myOtherAdd=add.call(undefined,2,3,15);
 console.log(myOtherAdd);
