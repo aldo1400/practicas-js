@@ -61,18 +61,16 @@ let suma = numeros.reduce((a, b, i, arr) => {
 
 console.log(promedio);
 
-let mejorEstudiante = estudiantes.reduce((a, b) =>
-{
-    if(a.calificacion>b.calificacion){
-        return{
-            nombre:a.nombre,
-            calificacion:a.calificacion
+let mejorEstudiante = estudiantes.reduce((a, b) => {
+    if (a.calificacion > b.calificacion) {
+        return {
+            nombre: a.nombre,
+            calificacion: a.calificacion
         }
-    }
-    else{
-        return{
-            nombre:b.nombre,
-            calificacion:b.calificacion
+    } else {
+        return {
+            nombre: b.nombre,
+            calificacion: b.calificacion
         }
     }
 });
