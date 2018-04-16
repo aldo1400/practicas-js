@@ -1,1 +1,1 @@
-let saludar= name=>`Hola ${name*2}`;
+let saludar= name=>`Hola ${name}`;

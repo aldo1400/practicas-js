@@ -1,5 +1,5 @@
 "use strict";
 
 var saludar = function saludar(name) {
-  return "Hola " + name * 2;
+  return "Hola " + name;
 };
